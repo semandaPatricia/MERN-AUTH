@@ -1,14 +1,9 @@
-const express = require("express");
-const router = express.Router();
-const userController = require('../controllers/user.controller.js')
-//import {test} from '../controllers/user.controller.js';
 
-app.get ('/' ,(req, res) => {
-    res.json({
-      message: 'API is working!',
-    });
-  });
+import express from 'express';
+import { test,} from '../controllers/user.controller.js';
+
+
+const router = express.Router();
 
 router.get('/', test);
-
-module.exports = router;
+export default router;
