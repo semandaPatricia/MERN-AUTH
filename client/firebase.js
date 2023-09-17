@@ -5,12 +5,13 @@ import { initializeApp } from 'firebase/app';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    REACT_APP_API_KEY=
-    REACT_APP_AUTH_DOMAIN=
-    REACT_APP_PROJECT_ID=
-    REACT_APP_STORAGE_BUCKET=
-    REACT_APP_MESSAGING_SENDER_ID=
-    REACT_APP_APP_ID=
+    apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+    authDomain: "mern-auth-a0b97.firebaseapp.com",
+    projectId: "mern-auth-a0b97",
+    storageBucket: "mern-auth-a0b97.appspot.com",
+    messagingSenderId: "46589547644",
+    appId: "1:46589547644:web:2e2b95661f69df88ce65f9",
+    measurementId: "G-2T35N0XLKW"
 }
 
 // Initialize Firebase
